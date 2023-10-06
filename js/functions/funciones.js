@@ -4,7 +4,7 @@ import { Terrestre } from "../model/terrestre.js";
 export const $ = (id) => document.getElementById(id);
 
 const esTerrestre = (cantidadRuedas, cantidadPuertas) => {
-  return cantidadPuertas >= 0 || (cantidadPuertas === 0 && cantidadRuedas >= 0);
+  return (cantidadPuertas >= 0 || cantidadPuertas === 0) && cantidadRuedas >= 0;
 };
 
 const esAereo = (alturaMaxima, autonomia) => {
